@@ -1,0 +1,76 @@
+/* =========================================================
+   1. MÓDULO DE ALINHAMENTO (Cabeçalho e Navegação)
+   Objetivo: Centralizar elementos verticalmente e distribuir
+   espaços de forma proporcional nas extremidades.
+   ========================================================= */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* =========================================================
+   2. MÓDULO DE ESPAÇAMENTO (Grid de Cards e Ações)
+   Objetivo: Garantir um afastamento uniforme e consistente entre
+   os itens flexíveis sem dependência de margens manuais.
+   ========================================================= */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* =========================================================
+   3. MÓDULO DE EMPILHAMENTO (Layout Responsivo e Formulários)
+   Objetivo: Alterar a direção do fluxo de dados para organizar
+   elementos em coluna única em telas menores ou formulários.
+   ========================================================= */
+.form-group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  max-width: 350px; /* Limita a largura de cada seção/card */
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* =========================================================
+   4. ESTILIZAÇÃO E REDIMENSIONAMENTO DE IMAGENS
+   Objetivo: Ajustar imagens para caberem nos cards sem estourar a tela.
+   ========================================================= */
+.hero-section img {
+  width: 100%;
+  max-width: 320px;
+  height: 200px;
+  object-fit: cover; /* Corta proporcionalmente sem distorcer a foto */
+  border-radius: 8px;
+}

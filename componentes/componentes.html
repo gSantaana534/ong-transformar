@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Transformar - Componentes de Feedback</title>
+  <style>
+    :root {
+      --color-primary-dark: #1b4332;
+      --color-primary: #2d6a4f;
+      --color-primary-light: #52b788;
+      --color-neutral-dark: #1f2937;
+      --color-neutral-light: #f9fafb;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--color-neutral-light);
+      color: var(--color-neutral-dark);
+      padding: 2rem;
+      margin: 0;
+    }
+
+    h1 { color: var(--color-primary-dark); }
+    h2 { border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-top: 2rem; }
+
+    /* Badges (Etiquetas) */
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+    .badge-success { background-color: #d1fae5; color: #065f46; }
+    .badge-warning { background-color: #fef3c7; color: #92400e; }
+    .badge-info { background-color: #e0f2fe; color: #075985; }
+
+    /* Caixas de Alerta (Alerts) */
+    .alert {
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border-left: 6px solid;
+    }
+    .alert-success { background-color: #ecfdf5; border-color: var(--color-primary); color: #065f46; }
+    .alert-error { background-color: #fef2f2; border-color: #dc2626; color: #991b1b; }
+
+    /* Toast (Notificação flutuante) */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--color-neutral-dark);
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .toast-icon { color: var(--color-primary-light); font-weight: bold; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+
+  <h1>ONG Transformar - Guia de Componentes de Feedback</h1>
+
+  <h2>1. Categorização por Etiquetas (Badges)</h2>
+  <p>
+    <span class="badge badge-success">Voluntário Ativo</span>
+    <span class="badge badge-warning">Aguardando Validação</span>
+    <span class="badge badge-info">Projeto Meio Ambiente</span>
+  </p>
+
+  <h2>2. Caixas de Alerta (Alerts)</h2>
+  <div class="alert alert-success">
+    <strong>Sucesso!</strong> Cadastro de voluntário realizado com sucesso em nosso sistema.
+  </div>
+  <div class="alert alert-error">
+    <strong>Atenção:</strong> Por favor, verifique os campos do formulário antes de reenviar.
+  </div>
+
+  <!-- Toast Flutuante -->
+  <div class="toast">
+    <span class="toast-icon">✓</span>
+    <span>Alterações salvas com sucesso!</span>
+  </div>
+
+</body>
+</html>
